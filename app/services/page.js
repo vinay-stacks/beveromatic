@@ -31,13 +31,13 @@ export default function Page() {
             <nav aria-label="Breadcrumb" className="text-white">
               <ol className="flex space-x-2">
                 <li>
-                  <a href="/" className="hover:text-amber-400">Home</a>
+                  <Link href="/" className="hover:text-amber-400">Home</Link>
                 </li>
                 <li>
                   <span className="text-gray-500">/</span>
                 </li>
                 <li>
-                  <a href="/about" className="text-amber-400">Services</a>
+                  <Link href="/about" className="text-amber-400">Services</Link>
                 </li>
               </ol>
             </nav>

@@ -20,14 +20,14 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-[#150702] text-gray-300">
+        <footer className="bg-[url('/bg/footer-bg.webp')] bg-cover bg-right text-gray-300">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {/* About Section */}
                     <div>
-                        <h3 className="text-white text-lg font-semibold mb-4">About Us</h3>
-                        <p className="text-gray-400 text-sm leading-relaxed">
+                        <h3 className="text-[#f26522] text-2xl font-bold mb-4">About Us</h3>
+                        <p className="text-white text-sm leading-relaxed">
                             Beveromatic is a leading manufacturer of tea and coffee vending machines, 
                             offering cutting-edge technology, superior quality, and cost-effective 
                             solutions for offices, retail spaces, hotels, and institutions. With over 
@@ -48,16 +48,16 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
+                        <h3 className="text-[#f26522] text-2xl font-bold mb-4">Quick Links</h3>
                         <ul className="space-y-2">
                             <li>
-                                <Link href="/" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                                <Link href="/" className="text-white hover:text-[#f26522] transition-colors flex items-center gap-2">
                                     <Home size={16} />
                                     Home
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/about" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                                <Link href="/about" className="text-white hover:text-[#f26522] transition-colors flex items-center gap-2">
                                     <Info size={16} />
                                     About Us
                                 </Link>
@@ -69,13 +69,13 @@ const Footer = () => {
                                 </Link>
                             </li> */}
                             <li>
-                                <Link href="/services" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                                <Link href="/services" className="text-white hover:text-[#f26522] transition-colors flex items-center gap-2">
                                     <HeartHandshake size={16} />
                                     Services
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                                <Link href="/contact" className="text-white hover:text-[#f26522] transition-colors flex items-center gap-2">
                                     <Phone size={16} />
                                     Contact Us
                                 </Link>
@@ -85,11 +85,11 @@ const Footer = () => {
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-white text-lg font-semibold mb-4">Services</h3>
+                        <h3 className="text-[#f26522] text-2xl font-bold mb-4">Services</h3>
                         <ul className="space-y-2">
                             {services.map((service, index) => (
                                 <li key={index}>
-                                    <a className="text-gray-400 hover:text-white transition-colors">
+                                    <a className="text-white hover:text-[#f26522] transition-colors">
                                         {service}
                                     </a>
                                 </li>
@@ -99,11 +99,11 @@ const Footer = () => {
 
                     {/* Products */}
                     <div>
-                        <h3 className="text-white text-lg font-semibold mb-4">Products</h3>
+                        <h3 className="text-[#f26522] text-2xl font-bold mb-4">Products</h3>
                         <ul className="space-y-2">
                             {products.map((product, index) => (
                                 <li key={index}>
-                                    <Link href={`/product/${product.linkURL}`} className="text-gray-400 hover:text-white transition-colors">
+                                    <Link href={`/product/${product.linkURL}`} className="text-white hover:text-[#f26522] transition-colors">
                                         {product.name}
                                     </Link>
                                 </li>
@@ -114,10 +114,10 @@ const Footer = () => {
             </div>
 
             {/* Copyright Bar */}
-            <div className="border-t border-gray-800">
+            <div className="border-t border-[#f26522]/30">
                 <div className="max-w-7xl mx-auto px-4 py-6">
                     <div className="flex flex-col md:flex-row justify-center items-center">
-                        <p className="text-gray-400 text-sm text-center md:text-left">
+                        <p className="text-gray-100 text-sm text-center md:text-left">
                             Copyright © 2025 Beveromatic. All Rights Reserved.
                         </p>
                         {/* <div className="flex space-x-4 mt-4 md:mt-0">

@@ -1,14 +1,15 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Home, Info, Box, HeartHandshake, Phone, FileText, Search, Instagram, Twitter, Facebook } from 'lucide-react';
+import { Menu, X, ChevronDown, Home, Info, Box, HeartHandshake, Phone, FileText, Search, Facebook, Twitter, Instagram, MailSearch, Clock5} from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 const products = [
-    { name: 'Beveromatic 3 Lane Vending Machine', linkURL:'beveromatic-3-lane-vending-machine' },
-    { name: 'Beveromatic 4 Lane Vending Machine', linkURL:'beveromatic-4-lane-vending-machine' },
-    { name: 'Beveromatic 3DX 3 Lane Vending Machine', linkURL:'beveromatic-3dx-3-lane-vending-machine' },
-    { name: 'Beveromatic 2 Lane Vending Machine', linkURL:'beveromatic-2-lane-vending-machine' },
+    { name: '3 Lane Vending Machine', linkURL:'beveromatic-3-lane-vending-machine' },
+    { name: '4 Lane Vending Machine', linkURL:'beveromatic-4-lane-vending-machine' },
+    { name: '3DX 3 Lane Vending Machine', linkURL:'beveromatic-3dx-3-lane-vending-machine' },
+    { name: '2 Lane Vending Machine', linkURL:'beveromatic-2-lane-vending-machine' },
 ];
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
+        if (typeof window === "undefined") return;
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 20);
         };
@@ -29,34 +31,41 @@ function App() {
         <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[white] backdrop-blur-md' : 'bg-[white]'
             }`}>
             {/* Top Bar */}
-            <div className="hidden lg:block bg-gradient-to-r from-[#180C07] to-[#4b2514] text-white">
+            <div className="hidden lg:block bg-gradient-to-r from-[#3a1b0e] to-[#4b2514] text-white">
                 <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 py-2 flex justify-between items-center text-sm">
                     <div className="flex items-center space-x-4">
                         <span className="flex items-center">
-                            <Phone size={14} className="mr-2" />
+                            <Phone size={16} className="mr-2 text-[#f26522]" />
                             +91 98996 86468
                         </span>
                         <span>|</span>
-                        <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                        <span className="flex items-center">
+                         <MailSearch size={16} className="mr-2 text-[#f26522]" /> 
+                            contact@example.com
+                        </span>
+                        <span>|</span>
+                        <span className='flex items-center'>
+                        <Clock5 size={16} className="mr-2 text-[#f26522]" /> Mon - Sat: 9:00 AM - 6:00 PM
+                        </span>
                     </div>
                     <div className="flex items-center space-x-4">
-                        <a target='_blank' href="https://www.facebook.com/beveromatic" className="text-gray-400 hover:text-white transition-colors">
-                            <Facebook size={15} />
-                        </a>
+                        <Link target='_blank' href="https://www.facebook.com/beveromatic" className="text-[#f26522] hover:text-white transition-colors">
+                        <Facebook size={18} />
+                        </Link>
                         <span>|</span>
-                        <a target='_blank' href="https://x.com/beveromatic" className="text-gray-400 hover:text-white transition-colors">
-                            <Twitter size={15} />
-                        </a>
+                        <Link target='_blank' href="https://x.com/beveromatic" className="text-[#f26522] hover:text-white transition-colors">
+                            <Twitter size={18} />
+                        </Link>
                         <span>|</span>
-                        <a target='_blank' href="https://www.instagram.com/beveromatic/" className="text-gray-400 hover:text-white transition-colors">
-                            <Instagram size={15} />
-                        </a>
+                        <Link target='_blank' href="https://www.instagram.com/beveromatic/" className="text-[#f26522] hover:text-white transition-colors">
+                            <Instagram size={18} />
+                        </Link>
                     </div>
                 </div>
             </div>
 
             {/* Main Header */}
-            <div className={`border-b border-[#2E140B] transition-all duration-300 ${isScrolled ? 'py-3' : 'py-4'
+            <div className={`shadow-lg transition-all duration-300 ${isScrolled ? 'py-3' : 'py-4'
                 }`}>
                 <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
                     <div className="flex items-center justify-between">
@@ -70,16 +79,16 @@ function App() {
 
                         {/* Desktop Navigation */}
                         <nav className="hidden lg:flex items-center space-x-8">
-                            <Link href="/" className="text-black font-semibold opacity-80 hover:opacity-100 transition-opacity">
+                            <Link href="/" className="text-black font-semibold opacity-80 hover:text-[#f26522] transition-opacity">
                                 Home
                             </Link>
-                            <Link href="/about" className="text-black font-semibold opacity-80 hover:opacity-100 transition-opacity">
+                            <Link href="/about" className="text-black font-semibold opacity-80 hover:text-[#f26522] transition-opacity">
                                 About Us
                             </Link>
 
                             {/* Products Dropdown */}
                             <div className="relative group">
-                                <button className="text-black font-semibold opacity-80 hover:opacity-100 transition-opacity flex items-center">
+                                <button className="text-black font-semibold opacity-80 hover:text-[#f26522] transition-opacity flex items-center">
                                     Products
                                     <ChevronDown size={16} className="ml-1 group-hover:rotate-180 transition-transform duration-300" />
                                 </button>
@@ -101,10 +110,10 @@ function App() {
                                 </div>
                             </div>
 
-                            <Link href="/services" className="text-black font-semibold opacity-80 hover:opacity-100 transition-opacity">
+                            <Link href="/services" className="text-black font-semibold opacity-80 hover:text-[#f26522] transition-opacity">
                                 Services
                             </Link>
-                            <Link href="/contact" className="text-black font-semibold opacity-80 hover:opacity-100 transition-opacity">
+                            <Link href="/contact" className="text-black font-semibold opacity-80 hover:text-[#f26522] transition-opacity">
                                 Contact
                             </Link>
                         </nav>
@@ -117,7 +126,7 @@ function App() {
                             <Link
                                 href="/pdf/broucher.pdf"
                                 target="_blank"
-                                className="bg-[#3D1808] hover:bg-[#3D1808] text-white px-6 py-2.5 rounded-sm font-medium transition-all duration-300 transform hover:scale-105"
+                                className="bg-[#f26522] hover:bg-[#3D1808] text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
                             >
                                 Download Brochure
                             </Link>

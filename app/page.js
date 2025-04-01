@@ -67,28 +67,28 @@ export default function Home() {
     {
       id: 1,
       name: "Beveromatic 3 Lane Vending Machine",
-      image: "1.jpg",
+      image: "coffee-machine-1.png",
       description: "Compact, efficient, three-lane beverage dispenser.",
       link: 'beveromatic-3-lane-vending-machine'
     },
     {
       id: 2,
       name: "Beveromatic 4 Lane Vending Machine",
-      image: "2.jpg",
+      image: "coffee-machine-3.png",
       description: "High-capacity, four-lane vending solution.",
       link: 'beveromatic-4-lane-vending-machine'
     },
     {
       id: 3,
       name: "Beveromatic 3DX 3 Lane Vending Machine",
-      image: "3.jpg",
+      image: "coffee-machine-2.png",
       description: "beveromatic-3dx-3-lane-vending-machine",
       link: ''
     },
     {
       id: 4,
       name: "Beveromatic 2 Lane Vending Machine",
-      image: "4.jpg",
+      image: "coffee-machine-5.png",
       description: "Space-saving, quick two-lane dispenser.",
       link: 'beveromatic-2-lane-vending-machine'
     }
@@ -139,15 +139,15 @@ export default function Home() {
         <link rel="icon" href="https://beveromatic.com/wp-content/uploads/2025/01/cropped-favicon-1-192x192.png" sizes="192x192" />
         <link rel="apple-touch-icon" href="https://beveromatic.com/wp-content/uploads/2025/01/cropped-favicon-1-180x180.png" />
       </Head>
-      <main className="mt-22 sm:mt-26 md:mt-28 lg:mt-36 xl:mt-40">
+      <main className="mt-22 sm:mt-26 md:mt-28 lg:mt-36 xl:mt-36">
         <section className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
           <div style={{ width: "100%", margin: "0 auto" }}>
             <Slider {...settings}>
               <div className="w-full h-[170px] sm:h-[280px] md:h-[360px] lg:h-[420px] xl:h-[480px] mb-[-8px] rounded-2xl overflow-hidden">
-                <Image className="w-full h-full" width={2100} height={700} src={'/sliderImage/b1.png'} alt="Slide 1" />
+                <Image className="w-full h-full" width={2100} height={700} src={'/sliderImage/beveromatic-slider.webp'} alt="Slide 1" />
               </div>
               <div className="w-full h-[170px] sm:h-[280px] md:h-[360px] lg:h-[420px] xl:h-[480px] mb-[-8px] rounded-2xl overflow-hidden">
-                <Image className="w-full h-full" width={2100} height={700} src={'/sliderImage/b2.png'} alt="Slide 2" />
+                <Image className="w-full h-full" width={2100} height={700} src={'/sliderImage/slider-2.webp'} alt="Slide 2" />
               </div>
             </Slider>
           </div>
@@ -163,24 +163,24 @@ export default function Home() {
             </Slider>
           </div>
         </section> */}
-        <section className="w-full py-12 md:py-20 bg-white">
+        <section className="w-full py-10 md:py-20 bg-[url('/bg/bg-1.webp')] bg-cover bg-center">
           <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
             {/* Hero Section */}
-            <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold text-black mb-6">
+            <div className="text-center mb-10">
+              <h1 className="text-3xl md:text-5xl font-bold text-black mb-6">
                 About <span className="text-[#AC4C2D]">Beveromatic</span>
               </h1>
               <div className="flex flex-wrap justify-center gap-4 mb-8">
-                <span className="text-black flex items-center gap-2">
-                  <Coffee className="text-[#AC4C2D]" size={20} />
+                <span className="text-black flex items-center gap-2 bg-slate-200 rounded-full px-4 py-1">
+                  <Coffee className="text-[#f26522]" size={20} />
                   Premium Vending Machines
                 </span>
-                <span className="text-black flex items-center gap-2">
-                  <Sparkles className="text-[#AC4C2D]" size={20} />
+                <span className="text-black flex items-center gap-2 bg-slate-200 rounded-full px-4 py-1">
+                  <Sparkles className="text-[#f26522]" size={20} />
                   High-Quality Beverages
                 </span>
-                <span className="text-black flex items-center gap-2">
-                  <Timer className="text-[#AC4C2D]" size={20} />
+                <span className="text-black flex items-center gap-2 bg-slate-200 rounded-full px-4 py-1">
+                  <Timer className="text-[#f26522]" size={20} />
                   25+ Years of Expertise
                 </span>
               </div>
@@ -188,11 +188,11 @@ export default function Home() {
 
             {/* Content Section */}
             <div className="relative">
-              <div className="bg-[#7A4433] backdrop-blur-lg rounded-2xl p-8 md:p-12 border border-white/10">
-                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
+              <div className="bg-[#fff] backdrop-blur-lg rounded-2xl p-2 md:p-5 border border-white/10">
+                {/* <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                   <Award className="text-[#AC4C2D] w-12 h-12" />
-                </div>
-                <p className="text-white text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-center">
+                </div> */}
+                <p className="text-black leading-relaxed max-w-5xl mx-auto text-center">
                   We at Beveromatic, specialize in providing top-of-the-line vending machines that serve
                   premium tea and coffee blends, ensuring every cup is just the way you like it. Whether
                   you&apos;re looking for an office solution, a café upgrade, or a convenient refreshment
@@ -201,7 +201,7 @@ export default function Home() {
               </div>
 
               {/* Stats or Features */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+              {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
                 <div className="bg-[#7A4433] backdrop-blur-lg rounded-xl p-6 text-center border border-white/10">
                   <Coffee className="w-8 h-8 text-white mx-auto mb-4" />
                   <h3 className="text-white text-lg font-semibold mb-2">Premium Quality</h3>
@@ -217,16 +217,16 @@ export default function Home() {
                   <h3 className="text-white text-lg font-semibold mb-2">Innovation</h3>
                   <p className="text-white">Latest technology in vending solutions</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
-        <div className="min-h-screen  bg-[#7A4433]">
+        <div className="min-h-screen bg-[#fff2eb] bg-[url('/bg/bg1.jpg')] bg-blend-multiply bg-right bg-no-repeat">
           <section className="w-full py-24">
             <div className="max-w-7xl px-6 sm:px-6 lg:px-10 mx-auto">
               <div className="text-center mb-20">
-                <h2 className="text-4xl font-bold text-white mb-4">Featured Products</h2>
-                <p className="text-white max-w-2xl mx-auto">
+                <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">Featured <span className="text-[#AC4C2D]">Products</span></h2>
+                <p className="text-black max-w-2xl mx-auto">
                   Discover our carefully curated collection of premium furniture pieces
                 </p>
               </div>
@@ -235,17 +235,17 @@ export default function Home() {
                 {products.map((product) => (
                   <div
                     key={product.id}
-                    className="group relative bg-[#f7f0e133] backdrop-blur-sm rounded-3xl overflow-hidden hover:border-[#703728] transition-all duration-500"
+                    className="group relative bg-white shadow-xl backdrop-blur-sm rounded-3xl overflow-hidden hover:border-[#703728] transition-all duration-500"
                   >
                     <div className="flex flex-col lg:flex-row h-full">
-                      <div className="relative w-full lg:w-2/5 h-64 lg:h-auto overflow-hidden">
+                      <div className="relative w-full bg-[#edcdbb] lg:w-2/5 md:h-64 min-[569px]:h-80 lg:h-auto overflow-hidden">
                         <Image
                           src={`/productImage/${product.image}`}
                           alt={product.name}
                           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                           width={600} height={450}
                         />
-                        <div className="absolute top-4 left-4 bg-[#170A04] text-white text-sm px-3 py-1 rounded-full">
+                        <div className="absolute top-4 left-4 bg-[#f26522] text-white text-sm px-3 py-1 rounded-full">
                           Vending
                         </div>
                       </div>
@@ -253,16 +253,16 @@ export default function Home() {
                       <div className="flex-1 p-8 flex flex-col justify-between">
                         <div>
                           <div className="flex items-center justify-between mb-4">
-                            <h3 className="text-2xl font-bold text-[white] transition-colors">
+                            <h3 className="text-2xl font-bold text-[#170A04] transition-colors">
                               {product.name}
                             </h3>
-                            <span className="flex items-center text-yellow-400">
+                            {/* <span className="flex items-center text-yellow-400">
                               <Star size={16} className="fill-current" />
                               <span className="ml-1 text-sm">{5}</span>
-                            </span>
+                            </span> */}
                           </div>
 
-                          <p className="text-white mb-6">{product.description}</p>
+                          <p className="text-black mb-6">{product.description}</p>
 
                           {/* <div className="flex items-center space-x-4 mb-6">
                           <div className="flex items-center text-emerald-400">
@@ -284,7 +284,7 @@ export default function Home() {
                             <MessageCircle size={20} className="mr-1" />
                             <span className=" text-sm whitespace-nowrap">Inquire Now</span>
                           </button>
-                          <Link href={`/${product.link}`} className="flex-1 flex items-center justify-center bg-slate-800 text-white py-3 px-6 rounded-xl hover:bg-slate-700 transition-all duration-300">
+                          <Link href={`/${product.link}`} className="flex-1 flex items-center justify-center bg-[#f26522] text-white py-3 px-6 rounded-xl hover:bg-[#251108] transition-all duration-300">
                             <span className=" text-sm whitespace-nowrap">View Details</span>
                             <ArrowRight size={18} className="ml-2" />
                           </Link>
@@ -299,11 +299,11 @@ export default function Home() {
         </div>
         <section className="w-full py-20 bg-white">
           <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-5 flex flex-col items-center">
-            <h2 className=" text-center text-4xl font-bold text-black mb-4">Why Choose <span>Beveromatic</span></h2>
+            <h2 className=" text-center text-3xl md:text-5xl font-bold text-black mb-4">Why Choose <span className="text-[#AC4C2D]">Beveromatic</span></h2>
             <div className="flex flex-wrap justify-center w-full">
 
               <div className="w-full md:w-1/2 lg:w-1/4 p-4">
-                <div className="bg-[#7A4433] rounded-2xl gap-3 flex flex-col items-center overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl p-6">
+                <div className="bg-white border border-gray-300 min-h-[260px] rounded-2xl gap-3 flex flex-col items-center overflow-hidden transform transition-all duration-300 hover:scale-101 hover:shadow-2xl p-6">
                   <Image
                     src="/advantageIcon/happy.svg"
                     alt="happyCustomers"
@@ -312,14 +312,14 @@ export default function Home() {
                     priority
                   />
                   <div className="flex flex-col items-center">
-                    <h3 className="text-xl font-semibold text-white mb-2">Happy Customers</h3>
-                    <p className="text-white mb-4 text-center">Over 5000+ happy customers across the Country</p>
+                    <h3 className="text-xl font-bold text-[#f26522] mb-2">Happy Customers</h3>
+                    <p className="text-black mb-4 text-center">Over 5000+ happy customers across the Country</p>
                   </div>
                 </div>
               </div>
 
               <div className="w-full md:w-1/2 lg:w-1/4 p-4">
-                <div className="bg-[#7A4433] rounded-2xl gap-3 flex flex-col items-center overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl p-6">
+                <div className="bg-white border border-gray-300 min-h-[260px] rounded-2xl gap-3 flex flex-col items-center overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl p-6">
                   <Image
                     src="/advantageIcon/delivery.svg"
                     alt="happyCustomers"
@@ -328,14 +328,14 @@ export default function Home() {
                     priority
                   />
                   <div className="flex flex-col items-center">
-                    <h3 className="text-xl font-semibold text-white mb-2">Delivery</h3>
-                    <p className="text-white mb-4 text-center">Get your machines delivered at your doorstep</p>
+                    <h3 className="text-xl font-bold text-[#f26522] mb-2">Delivery</h3>
+                    <p className="text-black mb-4 text-center">Get your machines delivered at your doorstep</p>
                   </div>
                 </div>
               </div>
 
               <div className="w-full md:w-1/2 lg:w-1/4 p-4">
-                <div className="bg-[#7A4433] rounded-2xl gap-3 flex flex-col items-center overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl p-6">
+                <div className="bg-white border border-gray-300 min-h-[260px] rounded-2xl gap-3 flex flex-col items-center overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl p-6">
                   <Image
                     src="/advantageIcon/tech.svg"
                     alt="happyCustomers"
@@ -344,15 +344,15 @@ export default function Home() {
                     priority
                   />
                   <div className="flex flex-col items-center">
-                    <h3 className="text-xl font-semibold text-white mb-2">Tech Solutions</h3>
-                    <p className="text-white mb-4 text-center">Customize your machines with our IOT solutions</p>
+                    <h3 className="text-xl font-bold text-[#f26522] mb-2">Tech Solutions</h3>
+                    <p className="text-black mb-4 text-center">Customize your machines with our IOT solutions</p>
                   </div>
                 </div>
               </div>
 
               <div className="w-full md:w-1/2 lg:w-1/4 p-4">
-                <div className="bg-[#7A4433] rounded-2xl gap-3 flex flex-col items-center overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl p-6">
-                  <Image
+                <div className="bg-white border border-gray-300 min-h-[260px] rounded-2xl gap-3 flex flex-col items-center overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl p-6">
+                  <Image                    
                     src="/advantageIcon/beverage.svg"
                     alt="happyCustomers"
                     width={80}
@@ -360,8 +360,8 @@ export default function Home() {
                     priority
                   />
                   <div className="flex flex-col items-center">
-                    <h3 className="text-xl font-semibold text-white mb-2">Beverages</h3>
-                    <p className="text-white mb-4 text-center">Get your favourite and high quality beverages</p>
+                    <h3 className="text-xl font-bold text-[#f26522] mb-2">Beverages</h3>
+                    <p className="text-black mb-4 text-center">Get your favourite and high quality beverages</p>
                   </div>
                 </div>
               </div>
@@ -369,67 +369,83 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-20 bg-[#7a4433]">
+        <section className="w-full py-20 bg-[#fff2eb] bg-[url('/bg/coffee-background-top-1.jpg')] bg-blend-multiply bg-center bg-cover">
           <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-white mb-4">What Our Customers Say</h2>
-              <div className="flex items-center justify-center gap-2">
+              <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">What Our <span className="text-[#AC4C2D]">Customers Say</span></h2>
+              {/* <div className="flex items-center justify-center gap-2">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />
                 ))}
-              </div>
+              </div> */}
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Testimonial 1 */}
               <div className="bg-white rounded-2xl p-8 shadow-xl transform hover:scale-105 transition-transform duration-300">
                 <div className="flex items-start mb-6">
-                  <Quote className="w-12 h-12 text-[#251913] opacity-50" />
+                  <Quote className="w-12 h-12 text-[#251913] opacity-20" />
                 </div>
-                <p className="text-[#3D1808] mb-6">
+                <p className="text-black mb-6">
                   &quot;Beveromatic&apos;s coffee vending machines have transformed our office culture. The quality of coffee is exceptional, and the machine&apos;s reliability is outstanding. Our employees love having premium coffee available 24/7!&quot;
                 </p>
+                <div className="flex items-center text-center lg:justify-start gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
 
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="font-semibold text-[#3D1808]">Sarah Johnson</h4>
                     <p className="text-sm text-black">Office Manager at TechCorp</p>
                   </div>
-                  <Coffee className="w-8 h-8 text-[#251913] opacity-50" />
+                  <Coffee className="w-12 h-12 text-[#f26522] opacity-50" />
                 </div>
               </div>
 
               {/* Testimonial 2 */}
               <div className="bg-white rounded-2xl p-8 shadow-xl transform hover:scale-105 transition-transform duration-300">
                 <div className="flex items-start mb-6">
-                  <Quote className="w-12 h-12 text-[#251913] opacity-50" />
+                  <Quote className="w-12 h-12 text-gray-900 opacity-20" />
                 </div>
-                <p className="text-[#3D1808] mb-6">
+                <p className="text-black mb-6">
                   &quot;Installing Beveromatic machines in our hotel lobby was one of the best decisions we made. The modern design fits perfectly with our aesthetic, and guests frequently compliment the coffee quality.&quot;
                 </p>
+
+                <div className="flex items-center text-center lg:justify-start gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="font-semibold text-[#3D1808]">Michael Chen</h4>
                     <p className="text-sm text-black">Hotel Operations Director</p>
                   </div>
-                  <ThumbsUp className="w-8 h-8 text-[#251913] opacity-50" />
+                  <ThumbsUp className="w-12 h-12 text-[#f26522] opacity-50" />
                 </div>
               </div>
 
               {/* Testimonial 3 */}
               <div className="bg-white rounded-2xl p-8 shadow-xl transform hover:scale-105 transition-transform duration-300">
                 <div className="flex items-start mb-6">
-                  <Quote className="w-12 h-12 text-[#251913] opacity-20" />
+                  <Quote className="w-12 h-12 text-slate-900 opacity-20" />
                 </div>
-                <p className="text-[#3D1808] mb-6">
+                <p className="text-black mb-6">
                   &quot;The maintenance support from Beveromatic is exceptional. Their machines are not only stylish but also incredibly reliable. We&apos;ve seen a 40% increase in beverage sales since switching to Beveromatic.&quot;
                 </p>
+                <div className="flex items-center text-center lg:justify-start gap-1">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
                 <div className="flex items-center justify-between">
                   <div>
                     <h4 className="font-semibold text-[#3D1808]">David Martinez</h4>
                     <p className="text-sm text-black">Retail Store Manager</p>
                   </div>
-                  <Coffee className="w-8 h-8 text-[#251913] opacity-50" />
+                  <Coffee className="w-12 h-12 text-[#f26522] opacity-50" />
                 </div>
               </div>
             </div>
@@ -482,49 +498,49 @@ export default function Home() {
               {/* Contact Information */}
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-4xl font-bold text-[#150702] mb-6">Get in Touch</h2>
+                  <h2 className="text-3xl md:text-5xl font-bold text-black mb-6">Get in <span className="text-[#AC4C2D]">Touch</span></h2>
                   <p className="text-[#150702] text-lg">Have a question or want to work together? Drop us a message!</p>
                 </div>
 
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4 ">
-                    <div className="bg-[#150702] p-4 rounded-lg">
+                    <div className="bg-[#f26522] p-4 rounded-lg">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="text-[#150702] font-semibold">Email</h3>
-                      <p className="text-[#150702]">contact@example.com</p>
+                      <p className="text-[#000]">contact@example.com</p>
                     </div>
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="bg-[#150702] p-4 rounded-lg">
+                    <div className="bg-[#f26522] p-4 rounded-lg">
                       <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="text-[#150702] font-semibold">Phone</h3>
-                      <p className="text-[#150702]">+91 98996 86468</p>
+                      <p className="text-[#000]">+91 98996 86468</p>
                     </div>
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="bg-[#150702] p-4 rounded-lg">
+                    <div className="bg-[#f26522] p-4 rounded-lg">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="text-[#150702] font-semibold">Location</h3>
-                      <p className="text-[#150702]">123 Creative Street, Design City</p>
+                      <p className="text-[#000]">123 Creative Street, Design City</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Contact Form */}
-              <div className="bg-[#7A4433] p-8 rounded-2xl shadow-xl">
+              <div className="bg-[#3b1b10] p-10 rounded-lg ">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                      <User className="w-5 h-5 text-gray-500" />
+                      <User className="w-5 h-5 text-[#f26522]" />
                     </div>
                     <input
                       type="text"
@@ -537,7 +553,7 @@ export default function Home() {
 
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                      <Mail className="w-5 h-5 text-gray-500" />
+                      <Mail className="w-5 h-5 text-[#f26522]" />
                     </div>
                     <input
                       type="email"
@@ -550,7 +566,7 @@ export default function Home() {
 
                   <div className="relative">
                     <div className="absolute top-3 left-0 pl-4 pointer-events-none">
-                      <MessageSquare className="w-5 h-5 text-gray-500" />
+                      <MessageSquare className="w-5 h-5 text-[#f26522]" />
                     </div>
                     <textarea
                       placeholder="Your Message"
@@ -563,7 +579,7 @@ export default function Home() {
 
                   <button
                     type="submit"
-                    className="w-full bg-[#150702] text-white py-3 px-6 rounded-lg flex items-center justify-center space-x-2 hover:from-[#150702] hover:to-[#150702] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#150702] focus:ring-offset-2 focus:ring-offset-[#3d1a0f]"
+                    className="w-full bg-[#f26522] text-white py-3 px-6 rounded-lg flex items-center justify-center space-x-2 hover:from-[#f26522 hover:to-[#f26522] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#f26522] focus:ring-offset-2 focus:ring-offset-[#f26522]"
                   >
                     <span>Send Message</span>
                     <Send className="w-5 h-5" />

@@ -3,6 +3,7 @@
 import { Users, Truck, Cpu, Coffee, Heart, Star } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+
 import { useEffect } from 'react';
 
 export default function Page() {
@@ -13,38 +14,38 @@ export default function Page() {
     })
   }, [])
   return (
-    <main className="min-h-screen text-white bg-gray-500 mt-15 md:mt-26">
+    <main className="min-h-screen text-white bg-[#fff2eb] bg-[url('/bg/breadcrumb-bg.webp')] bg-blend-multiply bg-center mt-15 md:mt-26">
       {/* Hero Section */}
-      <section className="relative py-22 overflow-hidden">
-        <div className="absolute inset-0 bg-[#3d180870]">
+      <section className="relative py-36 overflow-hidden">
+        {/* <div className="absolute inset-0 bg-[#3d180870]">
           <Image
-            src="/bgImage/b2.avif"
+            src="/bg/breadcrumb-bg.webp"
             alt="Background Image"
             className="w-full h-full object-cover opacity-60 mix-blend-overlay"
             width={2400}
             height={430}
           />
-        </div>
+        </div> */}
 
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="max-w-3xl mb-4">
-            <nav aria-label="Breadcrumb" className="text-white">
+            <nav aria-label="Breadcrumb" className="text-black">
               <ol className="flex space-x-2">
                 <li>
-                  <a href="/" className="hover:text-amber-400">Home</a>
+                  <Link href="/" className="hover:text-[#f26522]">Home</Link>
                 </li>
                 <li>
                   <span className="text-gray-500">/</span>
                 </li>
                 <li>
-                  <a href="/about" className="text-amber-400">About</a>
+                  <Link href="/about" className="text-[#f26522]">About</Link>
                 </li>
               </ol>
             </nav>
           </div>
 
           <div className="max-w-2xl">
-            <h1 className="text-6xl font-extrabold mb-6 text-white">
+            <h1 className="text-6xl font-extrabold mb-6 text-[#3D1808]">
               About Beveromatic
             </h1>
             {/* <div className="flex gap-4 mb-6">
@@ -91,7 +92,7 @@ export default function Page() {
       <section className='py-16 md:py-14 bg-white relative overflow-hidden'>
         <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
           <div className='flex flex-col gap-6 text-black'>
-            <h2 className='text-[#3D1808] text-center font-semibold text-6xl'>About us</h2>
+            <h2 className='text-[#000] text-center font-bold text-6xl'>About <span className="text-[#AC4C2D]">Us</span></h2>
             <p className='text-[17px] text-center mb-1.5'>We at Beveromatic, specialize in providing top-of-the-line vending machines that serve premium tea and coffee blends, ensuring every cup is just the way you like it. Whether you’re looking for an office solution, a café upgrade, or a convenient refreshment option for your business, we’ve got you covered.</p>
             <p className='text-[17px] text-center mb-1.5'>Our mission right from inception has been to introduce our customers to some of the finest quality products at the best possible prices. At Beveromatic, we follow certain principles that allow us to push ourselves forward and excel in the field of manufacturing.</p>
             <p className='text-[17px] text-center mb-1.5'>With over 25 Years of experience in the Tea and Coffee Vending industry, we ensure that all our products are made using the best components that are sourced using environment friendly measures. Our Goals have been clear where we intend to focus on improving our existing line of products along with innovation in new product development.</p>
