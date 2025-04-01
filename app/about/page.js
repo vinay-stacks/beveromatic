@@ -14,19 +14,16 @@ export default function Page() {
     })
   }, [])
   return (
-    <main className="min-h-screen text-white bg-[#fff2eb] bg-[url('/bg/breadcrumb-bg.webp')] bg-blend-multiply bg-center mt-15 md:mt-26">
+    <main className="min-h-screen bg-[#fff] mt-22 md:mt-24">
       {/* Hero Section */}
-      <section className="relative py-36 overflow-hidden">
-        {/* <div className="absolute inset-0 bg-[#3d180870]">
-          <Image
-            src="/bg/breadcrumb-bg.webp"
-            alt="Background Image"
-            className="w-full h-full object-cover opacity-60 mix-blend-overlay"
-            width={2400}
-            height={430}
-          />
-        </div> */}
 
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 mt-15 md:mt-36">
+        <div>
+          <img className="w-full h-full rounded-2xl" width={2100} height={700} src={'/bgImage/about-us-hero.webp'} alt="about us hero" />
+        </div>
+      </div>
+
+      {/* <section className="relative py-36 overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="max-w-3xl mb-4">
             <nav aria-label="Breadcrumb" className="text-black">
@@ -48,17 +45,9 @@ export default function Page() {
             <h1 className="text-6xl font-extrabold mb-6 text-[#3D1808]">
               About Beveromatic
             </h1>
-            {/* <div className="flex gap-4 mb-6">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />
-              ))}
-            </div>
-            <p className="text-xl text-gray-300 mb-4">
-              Offering premium vending machines and high-quality beverages with over 25 years of expertise in the industry.
-            </p> */}
-          </div>
+           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* Mission Section */}
@@ -89,41 +78,47 @@ export default function Page() {
         </div>
       </section> */}
 
-      <section className='py-16 md:py-14 bg-white relative overflow-hidden'>
-        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
-          <div className='flex flex-col gap-6 text-black'>
-            <h2 className='text-[#000] text-center font-bold text-6xl'>About <span className="text-[#AC4C2D]">Us</span></h2>
-            <p className='text-[17px] text-center mb-1.5'>We at Beveromatic, specialize in providing top-of-the-line vending machines that serve premium tea and coffee blends, ensuring every cup is just the way you like it. Whether you’re looking for an office solution, a café upgrade, or a convenient refreshment option for your business, we’ve got you covered.</p>
-            <p className='text-[17px] text-center mb-1.5'>Our mission right from inception has been to introduce our customers to some of the finest quality products at the best possible prices. At Beveromatic, we follow certain principles that allow us to push ourselves forward and excel in the field of manufacturing.</p>
-            <p className='text-[17px] text-center mb-1.5'>With over 25 Years of experience in the Tea and Coffee Vending industry, we ensure that all our products are made using the best components that are sourced using environment friendly measures. Our Goals have been clear where we intend to focus on improving our existing line of products along with innovation in new product development.</p>
-            <p className='text-[17px] text-center mb-1.5'>Our team brings a rich and extensive experience in delivering large and complex projects in manufacturing. We offer next generation technology and services with high quality standards to optimize investments and resources.</p>
-            <p className='text-[17px] text-center mb-1.5'>At Beveromatic, we have the right people, collaborations with right partners and the flexibility to expand quickly based on consumer demand to serve our business partners effectively. In addition, our customer support team is always ready to assist with installation, maintenance, and any other needs you may have, ensuring that your vending experience is smooth and hassle-free.</p>
-            <p className='text-[17px] text-center mb-1.5'>Join us in making your tea and coffee breaks better, more efficient, and more enjoyable—one cup at a time.</p>
+      <section className="py-16 md:py-14 bg-[url('/bg/bg-1.webp')] bg-cover bg-center relative overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center px-6 sm:px-6 lg:px-10">
+          <div className='flex flex-col md:max-w-2xl gap-4 text-black'>
+            <h2 className='text-[#000] text-center md:text-start font-bold text-6xl'>About <span className="text-[#AC4C2D]">Us</span></h2>
+            <span className='text-[#f26522] font-bold italic'>Premium Vending Machines | High-Quality Beverages | 25+ Years of Expertise</span>
+            <p className='text-center md:text-start mb-1'>We at Beveromatic, specialize in providing top-of-the-line vending machines that serve premium tea and coffee blends, ensuring every cup is just the way you like it. Whether you’re looking for an office solution, a café upgrade, or a convenient refreshment option for your business, we’ve got you covered.</p>
+            <p className='text-center md:text-start  mb-1'>Our mission right from inception has been to introduce our customers to some of the finest quality products at the best possible prices. At Beveromatic, we follow certain principles that allow us to push ourselves forward and excel in the field of manufacturing.</p>
+            <p className='text-center md:text-start  mb-1'>With over 25 Years of experience in the Tea and Coffee Vending industry, we ensure that all our products are made using the best components that are sourced using environment friendly measures. Our Goals have been clear where we intend to focus on improving our existing line of products along with innovation in new product development.</p>
+            <p className='text-center md:text-start  mb-1'>Our team brings a rich and extensive experience in delivering large and complex projects in manufacturing. We offer next generation technology and services with high quality standards to optimize investments and resources.</p>
+            {/* <p className='text-[17px] text-center md:text-start  mb-1'>At Beveromatic, we have the right people, collaborations with right partners and the flexibility to expand quickly based on consumer demand to serve our business partners effectively. In addition, our customer support team is always ready to assist with installation, maintenance, and any other needs you may have, ensuring that your vending experience is smooth and hassle-free.</p> */}
+            <p className='text-[17px] text-center md:text-start  mb-1'>Join us in making your tea and coffee breaks better, more efficient, and more enjoyable—one cup at a time.</p>
+          </div>
+          <div className="">
+            <div className="about-img">
+              <img className="w-full h-full rounded-2xl" width={2100} height={700} src={'/bgImage/about-us-coffee.webp'} alt="about us hero" />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Experience Section */}
-      <section className="py-16 md:py-24 relative">
-        <div className="absolute inset-0 bg-[#7A4433]" />
+      <section className="py-16 md:py-24 bg-[url('/bg/about-why-bg.webp')] bg-cover bg-center relative">
+        <div className="absolute" />
         <div className="relative max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-8 text-white">
-              25+ Years of Excellence
+            <h2 className="text-4xl font-bold mb-8 text-black">
+            Why Choose <span className="text-[#AC4C2D]">Beveromatic?</span>
             </h2>
-            <p className="text-xl text-white max-w-3xl mx-auto">
-              With over 25 Years of experience in the Tea and Coffee Vending industry, we ensure that all our products are made using the best components that are sourced using environment friendly measures.
+            <p className="text-xl text-black max-w-3xl mx-auto">
+            India’s Leading Tea & Coffee Vending Machine Brand
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Users, title: 'Happy Customers', desc: 'Over 5000 Happy Customers across the Country' },
-              { icon: Truck, title: 'Delivery', desc: 'Get your machines delivered at your doorstep' },
-              { icon: Cpu, title: 'Tech Solutions', desc: 'Customize your machines with our IOT solutions' },
-              { icon: Coffee, title: 'Beverages', desc: 'Get your favourite and high quality beverages' },
+              { icon: Users, title: 'Quality & Taste', desc: 'Use the best coffee beans and premixes and our machine will deliver an exceptional beverage every time.' },
+              { icon: Truck, title: 'Reliability', desc: 'Our vending machines are built for long-lasting performance and minimal downtime.' },
+              { icon: Cpu, title: 'Convenience', desc: '24/7 access to hot and cold beverages ensures that your team stays energized throughout the day.' },
+              { icon: Coffee, title: 'Eco-Friendly', desc: 'We offer energy-efficient machines to reduce power consumption and support sustainability.' },
             ].map((stat, index) => (
-              <div key={index} className="group bg-white rounded-2xl p-8 transition-all duration-300 text-center">
+              <div key={index} className="group bg-white shadow-lg hover:shadow-xl rounded-2xl p-8 transition-all duration-300 text-center">
                 <div className="bg-[#3D1808] p-4 rounded-xl inline-block mb-6">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
