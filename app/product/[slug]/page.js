@@ -8,13 +8,15 @@ const Page = ({ params }) => {
     // const router = useRouter();
     // const resolvedParams = React.use(params);
     // const { slug } = params;
-    const {slug} = params;
+    const { slug } = params;
     const [product, setProduct] = useState(null);
     useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        })
+        if (typeof window !== "undefined") {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
         const fetchData = async () => {
             const data = [
                 {
@@ -308,12 +310,14 @@ const Page = ({ params }) => {
         fetchData();
     }, [slug])
     // console.log("params", params.slug)
-    
+
     const handleWhatsAppInquiry = (productName) => {
-        const message = `Hi, I'm interested in the ${productName}. Can you provide more information?`;
-        const whatsappUrl = `https://wa.me/+919873903766?text=${encodeURIComponent(message)}`;
-        window.open(whatsappUrl, '_blank');
-    };
+        if (typeof window !== "undefined") {
+          const message = `Hi, I'm interested in the ${productName}. Can you provide more information?`;
+          const whatsappUrl = `https://wa.me/+919873903766?text=${encodeURIComponent(message)}`;
+          window.open(whatsappUrl, "_blank");
+        }
+      };
 
     if (!product) {
         return (

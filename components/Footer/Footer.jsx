@@ -13,10 +13,12 @@ const Footer = () => {
     ]
 
     const products = [
-        { name: 'Beveromatic 3 Lane Vending Machine', linkURL:'beveromatic-3-lane-vending-machine' },
-        { name: 'Beveromatic 4 Lane Vending Machine', linkURL:'beveromatic-4-lane-vending-machine' },
-        { name: 'Beveromatic 3DX 3 Lane Vending Machine', linkURL:'beveromatic-3dx-3-lane-vending-machine' },
-        { name: 'Beveromatic 2 Lane Vending Machine', linkURL:'beveromatic-2-lane-vending-machine' },
+        { name: '2 Lane Vending Machine BV02P', linkURL:'/beveromatic-2-lane-vending-machine-bv02p' },
+        { name: '2 Lane Vending Machine BV02DX', linkURL:'/beveromatic-2-lane-vending-machine-bv0dx' },
+        { name: '3 Lane Vending Machine BV03P', linkURL:'/beveromatic-3-lane-vending-machine-bv03p' },
+        { name: '3 Lane Vending Machine BV03DX', linkURL:'/beveromatic-3-lane-vending-machine-bv03dx' },
+        { name: '4 Lane Vending Machine BV04P', linkURL:'/beveromatic-4-lane-vending-machine-bv04p' },
+        { name: '4 Lane Vending Machine BV04DX', linkURL:'/beveromatic-4-lane-vending-machine-bv04dx' },
     ];
 
     return (
@@ -116,9 +118,9 @@ const Footer = () => {
             {/* Copyright Bar */}
             <div className="border-t border-[#f26522]/30">
                 <div className="max-w-7xl mx-auto px-4 py-6">
-                    <div className="flex flex-col md:flex-row justify-center items-center">
-                        <p className="text-gray-100 text-sm text-center md:text-left">
-                            Copyright © 2025 Beveromatic. All Rights Reserved.
+                    <div className="flex flex-col items-center">
+                        <p className="text-gray-100 text-sm text-center">
+                            Copyright © 2025 Beveromatic. All Rights Reserved. | Manage By Hover Business Services LLP
                         </p>
                         {/* <div className="flex space-x-4 mt-4 md:mt-0">
                             <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
@@ -127,6 +129,7 @@ const Footer = () => {
                             <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
                                 Terms of Service
                             </a>
+                            <img src="/icons/make-in-india.png" className='w-[120px] bg-slate-50 rounded p-2' alt='make in india logo' />
                         </div> */}
                     </div>
                 </div>
