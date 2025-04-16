@@ -97,7 +97,7 @@ function App() {
             </div>
 
             {/* Main Header */}
-            <div className={`shadow-lg transition-all duration-300 ${isScrolled ? 'py-3' : 'py-4'
+            <div className={`shadow-lg transition-all duration-300 ${isScrolled ? 'py-3' : 'py-3'
                 }`}>
                 <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
                     <div className="flex items-center justify-between">
@@ -240,7 +240,7 @@ function App() {
                                                 {product.subItems.map((sub, subIndex) => (
                                                     <Link
                                                         key={subIndex}
-                                                        href={`/product/${sub.linkURL}`}
+                                                        href={`${sub.linkURL}`}
                                                         className="block pl-2 py-1 text-white text-lg hover:text-[#f26522] transition-all">
                                                         {sub.name}
                                                     </Link>

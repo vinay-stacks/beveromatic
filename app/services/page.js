@@ -18,7 +18,7 @@ export default function Page() {
     <main className="min-h-screen mt-15 md:mt-26 ">
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 mt-24 md:mt-36">
-        <div>
+        <div className='max-[769px]:mt-36'>
           <img className="w-full h-full rounded-2xl" src={'/sliderImage/services-hero.webp'} alt="about us hero" />
         </div>
       </div>

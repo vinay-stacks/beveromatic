@@ -30,7 +30,7 @@ const Beveromatic4LaneVending = () => {
         <div className="min-h-screen">
             {/* Hero Section */}
             <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 mt-24 md:mt-36">
-                <div>
+                <div className='max-[769px]:mt-36'>
                     <img className="w-full h-full rounded-2xl" src={'/sliderImage/4lan-hero.webp'} alt="3DX 3Lan Hero" />
                 </div>
             </div>

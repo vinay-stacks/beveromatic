@@ -11,8 +11,9 @@ import axios from 'axios'
 
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
+
 export default function Home() {
-  const [muted, setMuted] = useState(true)
+  // const [muted, setMuted] = useState(true)
   const settings = {
     dots: false,
     fade: true,
@@ -175,7 +176,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href="https://beveromatic.com/wp-content/uploads/2025/01/cropped-favicon-1-180x180.png" />
       </Head>
       <main className="mt-22 sm:mt-26 md:mt-28 lg:mt-36 xl:mt-36">
-        <section className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
+        <section className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 max-[769px]:mt-36">
           <div style={{ width: "100%", margin: "0 auto" }}>
             <Slider {...settings}>
               <div className="w-full h-[170px] sm:h-[280px] md:h-[360px] lg:h-[420px] xl:h-[480px] mb-[-8px] rounded-2xl overflow-hidden">

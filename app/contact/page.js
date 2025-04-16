@@ -16,17 +16,6 @@ const Page = () => {
 
   const [submitMessage, setSubmitMessage] = useState('');
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault()
-
-  //   try {
-  //     const response = await axios.post('/api/contact', formData)
-  //     console.log(response)
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // }
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -66,7 +55,7 @@ const Page = () => {
       {/* Hero Section */}
 
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 mt-24 md:mt-36">
-        <div>
+        <div className='max-[769px]:mt-36'>
           <img className="w-full h-full rounded-2xl" src={'/sliderImage/contact-us-hero.webp'} alt="about us hero" />
         </div>
       </div>

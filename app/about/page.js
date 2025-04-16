@@ -1,10 +1,12 @@
 'use client';
 
-import { Users, Truck, Cpu, Coffee, Heart, Star } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
-
 import { useEffect } from 'react';
+
+// export const metadata = {
+//   title: "Beveromatic Maintenance for Vending Machines",
+//   description: "Ensure peak performance of your vending machines with Beveromatic’s tailored maintenance and service solutions.",
+// };
 
 export default function Page() {
   useEffect(() => {
@@ -20,7 +22,7 @@ export default function Page() {
       {/* Hero Section */}
 
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 mt-15 md:mt-36">
-        <div>
+        <div className='max-[769px]:mt-36'>
           <Image className="w-full h-full rounded-2xl" width={2100} height={700} src={'/bgImage/about-us-hero.webp'} alt="about us hero" />
         </div>
       </div>
