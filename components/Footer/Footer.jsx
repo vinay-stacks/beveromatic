@@ -105,7 +105,7 @@ const Footer = () => {
                         <ul className="space-y-2">
                             {products.map((product, index) => (
                                 <li key={index}>
-                                    <Link href={`/product/${product.linkURL}`} className="text-white hover:text-[#f26522] transition-colors">
+                                    <Link href={`${product.linkURL}`} className="text-white hover:text-[#f26522] transition-colors">
                                         {product.name}
                                     </Link>
                                 </li>
