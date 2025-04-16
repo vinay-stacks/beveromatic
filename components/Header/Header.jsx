@@ -174,7 +174,7 @@ function App() {
                 <Search size={20} />
               </button> */}
                             <Link
-                                href="/pdf/broucher.pdf"
+                                href="/pdf/beveromatic-leaflet-new.pdf"
                                 target="_blank"
                                 className="bg-[#f26522] hover:bg-[#3D1808] text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105"
                             >
