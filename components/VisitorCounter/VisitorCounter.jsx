@@ -26,7 +26,9 @@ function VisitorCounter() {
 
     return (
         <>
-            <div id="visit-count" className='mt-8 bg-[#f26522] text-lg font-bold p-5 rounded-lg'>{visits !== null ? `Visiters: ${visits}` : 'Loading...'}</div>
+        <div className='relative'>
+            <div id="visit-count" className='w-[150px] absolute bottom-2 left-10 bg-[#2c140a] text-[#fff] text-sm p-3 rounded-lg'>{visits !== null ? `Visitors: ${visits}` : 'Loading...'}</div>
+        </div>
         </>
     );
 }

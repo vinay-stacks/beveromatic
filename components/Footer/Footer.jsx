@@ -14,16 +14,16 @@ const Footer = () => {
     ]
 
     const products = [
-        { name: '2 Lane Vending Machine BV02P', linkURL:'/beveromatic-2-lane-vending-machine-bv02p' },
-        { name: '2 Lane Vending Machine BV02DX', linkURL:'/beveromatic-2-lane-vending-machine-bv0dx' },
-        { name: '3 Lane Vending Machine BV03P', linkURL:'/beveromatic-3-lane-vending-machine-bv03p' },
-        { name: '3 Lane Vending Machine BV03DX', linkURL:'/beveromatic-3-lane-vending-machine-bv03dx' },
-        { name: '4 Lane Vending Machine BV04P', linkURL:'/beveromatic-4-lane-vending-machine-bv04p' },
-        { name: '4 Lane Vending Machine BV04DX', linkURL:'/beveromatic-4-lane-vending-machine-bv04dx' },
+        { name: '2 Lane Vending Machine BV02P', linkURL: '/beveromatic-2-lane-vending-machine-bv02p' },
+        { name: '2 Lane Vending Machine BV02DX', linkURL: '/beveromatic-2-lane-vending-machine-bv0dx' },
+        { name: '3 Lane Vending Machine BV03P', linkURL: '/beveromatic-3-lane-vending-machine-bv03p' },
+        { name: '3 Lane Vending Machine BV03DX', linkURL: '/beveromatic-3-lane-vending-machine-bv03dx' },
+        { name: '4 Lane Vending Machine BV04P', linkURL: '/beveromatic-4-lane-vending-machine-bv04p' },
+        { name: '4 Lane Vending Machine BV04DX', linkURL: '/beveromatic-4-lane-vending-machine-bv04dx' },
     ];
 
     return (
-        <footer className="bg-[url('/bg/footer-bg.webp')] bg-cover bg-right text-gray-300">
+        <footer className="bg-[url('/bg/footer-bg.webp')] bg-cover bg-right text-gray-300 relative">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -31,9 +31,9 @@ const Footer = () => {
                     <div>
                         <h3 className="text-[#f26522] text-2xl font-bold mb-4">About Us</h3>
                         <p className="text-white text-sm leading-relaxed">
-                            Beveromatic is a leading manufacturer of tea and coffee vending machines, 
-                            offering cutting-edge technology, superior quality, and cost-effective 
-                            solutions for offices, retail spaces, hotels, and institutions. With over 
+                            Beveromatic is a leading manufacturer of tea and coffee vending machines,
+                            offering cutting-edge technology, superior quality, and cost-effective
+                            solutions for offices, retail spaces, hotels, and institutions. With over
                             25 years of experience.
                         </p>
                         <div className="flex space-x-4 mt-6">
@@ -47,7 +47,7 @@ const Footer = () => {
                                 <Instagram size={20} />
                             </a>
                         </div>
-                        <VisitorCounter />
+
                     </div>
 
                     {/* Quick Links */}
@@ -116,14 +116,15 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            
+
 
             {/* Copyright Bar */}
             <div className="border-t border-[#f26522]/30">
                 <div className="max-w-7xl mx-auto px-4 py-6">
                     <div className="flex flex-col items-center">
+
                         <p className="text-gray-100 text-sm text-center">
-                            Copyright © 2025 Beveromatic. All Rights Reserved. | Manage By Hover Business Services LLP
+                            Copyright © 2025 Beveromatic. All Rights Reserved. | Powered By Hover Business Services LLP
                         </p>
                         {/* <div className="flex space-x-4 mt-4 md:mt-0">
                             <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
@@ -136,7 +137,11 @@ const Footer = () => {
                         </div> */}
                     </div>
                 </div>
+
+                <VisitorCounter />
+
             </div>
+
         </footer>
     )
 }
