@@ -67,8 +67,8 @@ const Page = () => {
           <div className="bg-[#fff2eb] rounded-xl hover:shadow-xl transition-shadow p-6">
             <Phone className="text-[#3D1808] w-8 h-8 mb-4" />
             <h3 className="font-semibold text-lg mb-2">Phone</h3>
+            <p className="text-black">+91-9873903766</p>
             <p className="text-black">+91-9899686468</p>
-            <p className="text-black">+91-8047552492</p>
           </div>
 
           <div className="bg-[#fff2eb] rounded-xl hover:shadow-xl transition-shadow p-6">
@@ -80,7 +80,7 @@ const Page = () => {
 
           <div className="bg-[#fff2eb] rounded-xl hover:shadow-xl transition-shadow p-6">
             <MapPin className="text-[#3D1808] w-8 h-8 mb-4" />
-            <h3 className="font-semibold text-lg mb-2">Location</h3>
+            <h3 className="font-semibold text-lg mb-2">Location</h3>w
             {/* <p className="text-black">3rd Floor, T-1-2-3, Sarda Chamber I Lsc-9, D Block, Prashant Vihar, New Delhi-110085, Delhi, India</p> */}
             <p className="text-black">New Delhi, India </p>
           </div>

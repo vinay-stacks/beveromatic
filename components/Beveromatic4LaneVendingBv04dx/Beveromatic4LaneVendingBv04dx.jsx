@@ -18,7 +18,7 @@ const Beveromatic4LaneVending = () => {
 
     const handleWhatsAppInquiry = (productName) => {
         if (typeof window !== "undefined") {
-            const message = `Hi, I'm interested in the Beveromatic 4 Lane Vending Machine. Can you provide more information?`;
+            const message = `Hi, I'm interested in the Beveromatic 4 Lane Hot Beverage Vending Machine. Can you provide more information?`;
             const whatsappUrl = `https://wa.me/+919873903766?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }

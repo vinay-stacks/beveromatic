@@ -24,7 +24,7 @@ export default function Home() {
     waitForAnimate: true,
     arrows: true, // This will remove the next and previous buttons
     autoplay: true, // Enables autoplay
-    autoplaySpeed: 6000
+    autoplaySpeed: 3000
   };
 
   var settingsIcon = {
@@ -36,7 +36,7 @@ export default function Home() {
     initialSlide: 0,
     arrows: false,
     autoplay: true, // Enables autoplay
-    autoplaySpeed: 6000,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 1024,
@@ -470,6 +470,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h3 className="text-[#150702] font-semibold">Phone</h3>
+                      <p className="text-[#000]">+91-9873903766 </p>
                       <p className="text-[#000]">+91-9899686468</p>
                     </div>
                   </div>
