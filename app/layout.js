@@ -2,6 +2,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import Whatsapp from "@/components/Whatsapp/Whatsapp";
+import VisitorCounter from "@/components/VisitorCounter/VisitorCounter";
 
 export const metadata = {
   title: "Beveromatic Vending Machines",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <Whatsapp />
+
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Home, Info, Box, HeartHandshake, Phone, FileText, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
 import Link from 'next/link'
+import VisitorCounter from '../VisitorCounter/VisitorCounter'
 
 const Footer = () => {
     const services = [
@@ -46,6 +47,7 @@ const Footer = () => {
                                 <Instagram size={20} />
                             </a>
                         </div>
+                        <VisitorCounter />
                     </div>
 
                     {/* Quick Links */}
@@ -114,6 +116,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            
 
             {/* Copyright Bar */}
             <div className="border-t border-[#f26522]/30">
