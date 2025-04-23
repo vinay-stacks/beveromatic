@@ -56,7 +56,7 @@ const Page = () => {
 
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 mt-24 md:mt-36">
         <div className='max-[769px]:mt-36'>
-          <img className="w-full h-full rounded-2xl" src={'/sliderImage/contact-us-hero.webp'} alt="about us hero" />
+          <Image height={700} width={1400} className="w-full h-full rounded-2xl" src={'/sliderImage/contact-us-hero.webp'} alt="about us hero" />
         </div>
       </div>
 

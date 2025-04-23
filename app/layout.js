@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
        <meta name="google-site-verification" content="sAP_mBFe-1gOVyAsKRigxAI2pPK8hMv571HbhtLq7Y8" />
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-295P5LR5MX"></Script>
-        <Script>
+        <Script id="tagurl" async src="https://www.googletagmanager.com/gtag/js?id=G-295P5LR5MX"></Script>
+        <Script id="gtag-init">
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());

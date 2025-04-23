@@ -1,9 +1,8 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown, Home, Info, Box, HeartHandshake, Phone, FileText, Search, Facebook, Twitter, Instagram, MailSearch, Clock5 } from 'lucide-react';
+import { Menu, X, ChevronDown,  Facebook, Twitter, Instagram} from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-
 
 const products = [
     {
