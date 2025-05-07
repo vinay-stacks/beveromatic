@@ -20,7 +20,7 @@ function Page() {
 
             <section className=" py-6! md:py-6! pb-0! bg-white mt-10">
                 <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
-                    <p className='mb-2 text-justify text-[#000]'>This Smart Tea Vending Machine, Beveromatic, is redefining the tea experience. The vending machines have been designed for ultimate convenience, offering fresh tea at a button's click, thus proving themselves to be well-suited for heavy traffic areas such as offices, hospitals, schools, and public spaces. Masala chai, green tea, or herbal tea, there is a cup for each taste by Beveromatic, a tea coffee vending machine. </p>
+                    <p className='mb-2 text-justify text-[#000]'>{`This Smart Tea Vending Machine, Beveromatic, is redefining the tea experience. The vending machines have been designed for ultimate convenience, offering fresh tea at a button's click, thus proving themselves to be well-suited for heavy traffic areas such as offices, hospitals, schools, and public spaces. Masala chai, green tea, or herbal tea, there is a cup for each taste by Beveromatic, a tea coffee vending machine. `} </p>
                     <p className='mb-2 text-justify text-[#000]'>Our vending machines offer premium drinks at any time, day or night, while ensuring hygiene and speed of service since clients need not endure long waiting times or the passing of service. Combining innovative technology with quality tea, Beveromatic creates a wonderful tea experience that satisfies rapid refreshment requirements in busy environments while promoting good health and productivity throughout the day.</p>
                 </div>
             </section>
@@ -46,7 +46,7 @@ function Page() {
 
                             <p className='mb-2 text-justify px-8'><strong>4. Customizable Features:</strong> Most vending machines allow users to personalize the tea experience. Tea strength can be configured, added milk or sugar to adjust the flavor; specific types, such as masala chai or pure herbal tea, can also be selected. With the personalization being done, one can ensure everyone gets precisely the right cup of their choice, which goes a long way in improving the experience as compared to using common tea services.</p>
 
-                            <p className='mb-2 text-justify px-8'><strong>5. All-time Presence: </strong> Being open 24 hours is one of the essential features of a tea coffee vending machine. In it, you have a supply of hot and fresh tea to drink, for tea drinkers when it's most required at any hour of day or night. This is more valuable in workplaces, hospitals, and anywhere else with irregular hours where tea is needed 24/7 without staff dependency or scheduled breaks.</p>
+                            <p className='mb-2 text-justify px-8'><strong>5. All-time Presence: </strong>{`Being open 24 hours is one of the essential features of a tea coffee vending machine. In it, you have a supply of hot and fresh tea to drink, for tea drinkers when it's most required at any hour of day or night. This is more valuable in workplaces, hospitals, and anywhere else with irregular hours where tea is needed 24/7 without staff dependency or scheduled breaks.`}  </p>
 
                             <h2 className="text-3xl md:text-4xl font-bold text-center mb-5 text-[#3d1808]">About Our Tea Vending Machines: </h2>
                             <p className='mb-2 text-center px-8'><strong>Beveromatic Is in the Business of Selling Such Advanced Machines.</strong></p>

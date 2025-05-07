@@ -129,7 +129,7 @@ const Beveromatic3LaneVending = () => {
                         </div>
                         <table className="w-full">
                             <tbody className='border border-gray-300'>
-                                <TableRow icon={Coffee} label="Options" value='5 Programmable ' highlight />
+                                <TableRow icon={Coffee} label="Options" value='5 Programmable Buttons ' highlight />
                                 <TableRow icon={Droplet} label="Hot Water" value={'Optional'} />
                                 <TableRow icon={Container} label="Boiler Capacity" value={'2.3 Liter'} highlight />
                                 <TableRow icon={Power} label="Boiler Heater" value={'1750 W'} />

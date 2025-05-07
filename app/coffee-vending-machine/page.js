@@ -21,7 +21,7 @@ function Page() {
             <section className=" py-6! md:py-6! pb-0! bg-white mt-10">
                 <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
                     <p className='mb-2 text-justify text-[#000]'>The Smart Coffee vending Machines from Beveromatic are changing the coffee experience. The task of freshly brewing beverages with just one button press fits well in high-footfall areas such as offices, hospitals, schools, and other public places. Premium coffee-making-a-row, including espresso for hot tea and everything in between, is what our machines offer to ensure that everyone gets their exact cup of coffee whenever they want it.</p>
-                    <p className='mb-2 text-justify text-[#000]'>Available on hygiene, speed, and user-friendliness, Beveromatic's coffee machine in delhi provide 24×7 access to quality refreshments without having users stand in long queues or rely on cafeteria services. By marrying advanced technology with top-notch coffee offerings, we strengthens productivity and improves the coffee experience for all its users.</p>
+                    <p className='mb-2 text-justify text-[#000]'>{`Available on hygiene, speed, and user-friendliness, Beveromatic's coffee machine in delhi provide 24×7 access to quality refreshments without having users stand in long queues or rely on cafeteria services. By marrying advanced technology with top-notch coffee offerings, we strengthens productivity and improves the coffee experience for all its users.`}</p>
                 </div>
             </section>
 
@@ -37,14 +37,14 @@ function Page() {
                          
                             <p className='mb-2 text-justify px-8'><strong>1. Convenience:</strong> This gives the user the ability to enjoy a cup of coffee anywhere and any time, skipping the lines and waiting for a barista to make the coffee. Instant access to coffee machines goes a long way in making life simple, enhancing convenience, and saving time in fast-paced environments, such as offices or hospitals and public places.</p>
 
-                            <p className='mb-2 text-justify px-8'><strong>2. Time saving:</strong> By motivating energizing power, coffee machines boost overall productivity throughout the day; fast brewing times allow coffee machines to serve users even in the morning rush hour or in the afternoon slump, thus preserving a user's alertness and focus.</p>
+                            <p className='mb-2 text-justify px-8'><strong>2. Time saving:</strong>{`By motivating energizing power, coffee machines boost overall productivity throughout the day; fast brewing times allow coffee machines to serve users even in the morning rush hour or in the afternoon slump, thus preserving a user's alertness and focus.`} </p>
 
                             <p className='mb-2 text-justify px-8'><strong>3. Cost efficient: </strong> Being on-site with a coffee machine eliminates the need to buy coffee from outside, and costs keep adding up with time. It is an economical alternative to provide a great beverage in an office or a public setting without incurring the costs of running a coffee service outside. </p>
 
                             <p className='mb-2 text-justify px-8'><strong>4. Customisation:</strong> Many coffee machines allow customization of beverages by altering their strength, type of milk, and flavor. All these options mean that each cup can be tailored to the individual preferences of the users of the machine. </p>
                             <p className='mb-2 text-justify px-8'><strong>5. Hygiene and Safety:</strong> Modern coffee machines, mostly coffee <Link href='https://beveromatic.com/' className='pointer text-[#f26522]'>vending machines</Link>, are designed for hygiene and safety, incorporating touchless or contactless payment and dispensing options. It reduces the risk of contamination, which is crucial in high-traffic areas such as hospitals or offices.</p>
 
-                            <p className='mb-2 text-justify px-8'>Thus, Coffee Vending Machine are more than just a machine for free beverage provision. But then again, coffee machines aren't that simple. In fact, they are really more of a well-kept secret ingredient to a much higher experience-integration level compared to other environments for consistent quality, increased productivity, and the lazy easy way to getting perfect cups of coffee for everyone.</p>
+                            <p className='mb-2 text-justify px-8'>{`Thus, Coffee Vending Machine are more than just a machine for free beverage provision. But then again, coffee machines aren't that simple. In fact, they are really more of a well-kept secret ingredient to a much higher experience-integration level compared to other environments for consistent quality, increased productivity, and the lazy easy way to getting perfect cups of coffee for everyone.`}</p>
 
                             <h2 className="text-3xl md:text-4xl font-bold text-center mb-5 text-[#3d1808]">What We Have for You at Beveromatic, Trusted Coffee Machine Suppliers</h2>
                             <p className='mb-2 text-justify px-8'>At Beveromatic, we have a range of innovative coffee machines to match every environment, from a portion to office space and busy venues. From these machines, your team, guests, or customers have a premium coffee experience anytime, as it offers 24×7 freshly brewed coffee. </p>
@@ -74,7 +74,7 @@ function Page() {
 
                             <h2 className="text-3xl md:text-4xl font-bold text-center mt-3 mb-5 text-[#3d1808]">Contact Us</h2>
                             <p className='mb-2 text-justify px-8'>Beveromatic is committed to providing good coffee solutions and great customer service. If you are looking for a specific coffee machine in Delhi or installation assistance, or ongoing maintenance support, our team of experts will help ensure you have a good experience. We work on establishing long-lasting relationships with our clients and provide a personalized solution for their specific needs. </p>
-                            <p className='mb-2 text-justify px-8'>Reach us anytime! Our customer support team is available from Monday to Friday, between 9 AM and 6 PM, to address any inquiries and concerns you may have. You can reach out to us via phone, email, or visit our website for more information. We look forward to helping you enhance your coffee experience with Beveromatic's machines.</p>
+                            <p className='mb-2 text-justify px-8'>{`Reach us anytime! Our customer support team is available from Monday to Friday, between 9 AM and 6 PM, to address any inquiries and concerns you may have. You can reach out to us via phone, email, or visit our website for more information. We look forward to helping you enhance your coffee experience with Beveromatic's machines.`} </p>
 
                         </div>
 

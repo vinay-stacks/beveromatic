@@ -207,7 +207,7 @@ const Beveromatic4LaneVending = () => {
                         </div>
                         <table className="w-full">
                             <tbody>
-                                <TableRow icon={Coffee} label="Options" value='7 Programmable ' highlight />
+                                <TableRow icon={Coffee} label="Options" value='7 Programmable Buttons ' highlight />
                                 <TableRow icon={Droplet} label="Hot Water" value={'Optional'} />
                                 <TableRow icon={Container} label="Boiler Capacity" value={'3.5 Liter'} highlight />
                                 <TableRow icon={Power} label="Boiler Heater" value={'1750 W'} />
@@ -235,7 +235,7 @@ const Beveromatic4LaneVending = () => {
                                 <TableRow icon={Monitor} label="Display" value={'LCD display module with yellow backlight'} />
                                 <TableRow icon={Settings} label="Interface" value={'Touch Button Interface'} highlight />
                                 <TableRow icon={Coffee} label="Cup Count" value={'Available'} />
-                                <TableRow icon={Thermometer} label="Temperature Setting" value={'Available'} highlight />
+                                {/* <TableRow icon={Thermometer} label="Temperature Setting" value={'Available'} highlight /> */}
                                 <TableRow icon={Droplet} label="Rinse" value={'Hourly Rinse Available'} />
                             </tbody>
                         </table>

@@ -127,7 +127,7 @@ const Beveromatic2Lane = () => {
                         </div>
                         <table className="w-full">
                             <tbody className='border border-gray-300'>
-                                <TableRow icon={Coffee} label="Options" value='5 Programmable ' highlight />
+                                <TableRow icon={Coffee} label="Options" value='5 Programmable Buttons ' highlight />
                                 {/* <TableRow icon={Droplet} label="Hot Water" value={'Available'} /> */}
                                 <TableRow icon={Container} label="Boiler Capacity" value={'2.3 Ltr'} highlight />
                                 <TableRow icon={Power} label="Boiler Heater" value={'1750 W'} />
@@ -152,7 +152,7 @@ const Beveromatic2Lane = () => {
                                 />
                                 <TableRow icon={Scale} label="Dispensing Height" value={'110 mm'} />
                                 <TableRow icon={Coffee} label="Dispensing Rate" value={'Upto 6 Cups per Minute'} highlight />
-                                <TableRow icon={Monitor} label="Display" value={'LCD display module with yellow backlight (2 x 16 line Display)'} />
+                                <TableRow icon={Monitor} label="Display" value={'LCD display module with yellow backlight'} />
                                 <TableRow icon={Settings} label="Interface" value={'Push Button Interface'} highlight />
                                 <TableRow icon={Coffee} label="Cup Count" value={'Available'} />
                                 {/* <TableRow icon={Thermometer} label="Temperature Setting" value={'Available'} highlight /> */}
