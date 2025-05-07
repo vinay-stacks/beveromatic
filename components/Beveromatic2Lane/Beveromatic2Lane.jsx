@@ -127,12 +127,12 @@ const Beveromatic2Lane = () => {
                         </div>
                         <table className="w-full">
                             <tbody className='border border-gray-300'>
-                                <TableRow icon={Coffee} label="Drink Options" value='Upto 4 Beverages Options' highlight />
+                                <TableRow icon={Coffee} label="Options" value='5 Programmable ' highlight />
                                 {/* <TableRow icon={Droplet} label="Hot Water" value={'Available'} /> */}
                                 <TableRow icon={Container} label="Boiler Capacity" value={'2.3 Ltr'} highlight />
                                 <TableRow icon={Power} label="Boiler Heater" value={'1750 W'} />
                                 <TableRow icon={Timer} label="Start Up Time" value={'Up to 10 Minutes'} highlight />
-                                <TableRow icon={Droplet} label="Water Input" value={'With Pump/Bubble Top'} />
+                                <TableRow icon={Droplet} label="Water Input" value={'With Pump/Online'} />
                                 <TableRow
                                     icon={Container}
                                     label="Powder Canisters"
@@ -142,20 +142,20 @@ const Beveromatic2Lane = () => {
                                 <TableRow
                                     icon={Settings}
                                     label="Gear Motor"
-                                    value={`2 motors, 100 RPM ± 5%`}
+                                    value={`2 motors`}
                                 />
                                 <TableRow
                                     icon={Gauge}
                                     label="Mixing Motor"
-                                    value={`2 motors, 15000 RPM ± 10%`}
+                                    value={`2 motors`}
                                     highlight
                                 />
                                 <TableRow icon={Scale} label="Dispensing Height" value={'110 mm'} />
-                                <TableRow icon={Coffee} label="Dispensing Rate" value={'5 Cups/min'} highlight />
+                                <TableRow icon={Coffee} label="Dispensing Rate" value={'Upto 6 Cups per Minute'} highlight />
                                 <TableRow icon={Monitor} label="Display" value={'LCD display module with yellow backlight (2 x 16 line Display)'} />
-                                <TableRow icon={Settings} label="Interface" value={'Keypad or button panel'} highlight />
+                                <TableRow icon={Settings} label="Interface" value={'Push Button Interface'} highlight />
                                 <TableRow icon={Coffee} label="Cup Count" value={'Available'} />
-                                <TableRow icon={Thermometer} label="Temperature Setting" value={'Available'} highlight />
+                                {/* <TableRow icon={Thermometer} label="Temperature Setting" value={'Available'} highlight /> */}
                                 <TableRow icon={Droplet} label="Rinse" value={'Hourly Rinse Available'} />
                             </tbody>
                         </table>
@@ -189,16 +189,16 @@ const Beveromatic2Lane = () => {
                                 <TableRow
                                     icon={Box}
                                     label="Unpacked Dimensions"
-                                    value={`255 mm × 470 mm × 595 mm`}
+                                    value={`250 mm x 480 mm x 590 mm`}
                                     highlight
                                 />
                                 <TableRow
                                     icon={Box}
                                     label="Packed Dimensions"
-                                    value={`340 mm × 530 mm × 660 mm`}
+                                    value={`340 mm x 520 mm x 670 mm`}
                                 />
-                                <TableRow icon={Scale} label="Net Weight" value={'14.5 Kg'} highlight />
-                                <TableRow icon={Scale} label="Gross Weight" value={'16.5 Kg'} />
+                                <TableRow icon={Scale} label="Net Weight" value={'15.00 Kgs.'} highlight />
+                                <TableRow icon={Scale} label="Gross Weight" value={'17.00 Kgs.'} />
                             </tbody>
                         </table>
                     </div>

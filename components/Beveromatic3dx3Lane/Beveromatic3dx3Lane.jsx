@@ -132,12 +132,12 @@ const Beveromatic3dx3Lane = () => {
                         </div>
                         <table className="w-full">
                             <tbody>
-                                <TableRow icon={Coffee} label="Drink Options" value='Upto 4 Beverages Options' highlight />
-                                <TableRow icon={Droplet} label="Hot Water" value={'Available'} />
+                                <TableRow icon={Coffee} label="Options" value='5 Programmable' highlight />
+                                <TableRow icon={Droplet} label="Hot Water" value={'Optional'} />
                                 <TableRow icon={Container} label="Boiler Capacity" value={'2.3 Liter'} highlight />
                                 <TableRow icon={Power} label="Boiler Heater" value={'1750 W'} />
                                 <TableRow icon={Timer} label="Start Up Time" value={'Up to 10 Minutes'} highlight />
-                                <TableRow icon={Droplet} label="Water Input" value={'With Pump'} />
+                                <TableRow icon={Droplet} label="Water Input" value={'With Pump/Online'} />
                                 <TableRow
                                     icon={Container}
                                     label="Powder Canisters"
@@ -147,20 +147,20 @@ const Beveromatic3dx3Lane = () => {
                                 <TableRow
                                     icon={Settings}
                                     label="Gear Motor"
-                                    value={`3 motors, 100 RPM ± 5%`}
+                                    value={`3 motors`}
                                 />
                                 <TableRow
                                     icon={Gauge}
                                     label="Mixing Motor"
-                                    value={`3 motors, 15000 RPM ± 10%`}
+                                    value={`3 motors`}
                                     highlight
                                 />
                                 <TableRow icon={Scale} label="Dispensing Height" value={'110 mm'} />
-                                <TableRow icon={Coffee} label="Dispensing Rate" value={'5 Cups/min'} highlight />
-                                <TableRow icon={Monitor} label="Display" value={'LCD display module with yellow backlight (2 x 16 line Display)'} />
-                                <TableRow icon={Settings} label="Interface" value={'Keypad or button panel'} highlight />
+                                <TableRow icon={Coffee} label="Dispensing Rate" value={'Upto 6 Cups per Minute'} highlight />
+                                <TableRow icon={Monitor} label="Display" value={'LCD display module with yellow backlight'} />
+                                <TableRow icon={Settings} label="Interface" value={'Touch Button Interface'} highlight />
                                 <TableRow icon={Coffee} label="Cup Count" value={'Available'} />
-                                <TableRow icon={Thermometer} label="Temperature Setting" value={'Available'} highlight />
+                                {/* <TableRow icon={Thermometer} label="Temperature Setting" value={'Available'} highlight /> */}
                                 <TableRow icon={Droplet} label="Rinse" value={'Hourly Rinse Available'} />
                             </tbody>
                         </table>
@@ -194,16 +194,16 @@ const Beveromatic3dx3Lane = () => {
                                 <TableRow
                                     icon={Box}
                                     label="Unpacked Dimensions"
-                                    value={`255 mm × 470 mm × 595 mm`}
+                                    value={`250 mm x 480 mm x 590 mm`}
                                     highlight
                                 />
                                 <TableRow
                                     icon={Box}
                                     label="Packed Dimensions"
-                                    value={`340 mm × 530 mm × 660 mm`}
+                                    value={`400 mm x 580 mm x 690 mm`}
                                 />
-                                <TableRow icon={Scale} label="Net Weight" value={'19 Kg'} highlight />
-                                <TableRow icon={Scale} label="Gross Weight" value={'21 Kg'} />
+                                <TableRow icon={Scale} label="Net Weight" value={'21.00 Kgs.'} highlight />
+                                <TableRow icon={Scale} label="Gross Weight" value={'23.00 Kgs.'} />
                             </tbody>
                         </table>
                     </div>

@@ -128,12 +128,12 @@ const Beveromatic4LaneVending = () => {
                         </div>
                         <table className="w-full">
                             <tbody>
-                                <TableRow icon={Coffee} label="Drink Options" value='7 Options' highlight />
-                                <TableRow icon={Droplet} label="Hot Water" value={'Available'} />
+                                <TableRow icon={Coffee} label="Options" value='7 Programmable ' highlight />
+                                <TableRow icon={Droplet} label="Hot Water" value={'Optional'} />
                                 <TableRow icon={Container} label="Boiler Capacity" value={'3.5 Liter'} highlight />
                                 <TableRow icon={Power} label="Boiler Heater" value={'1750 W'} />
                                 <TableRow icon={Timer} label="Start Up Time" value={'Up to 10 Minutes'} highlight />
-                                <TableRow icon={Droplet} label="Water Input" value={'With Pump'} />
+                                <TableRow icon={Droplet} label="Water Input" value={'With Pump/Online'} />
                                 <TableRow
                                     icon={Container}
                                     label="Powder Canisters"
@@ -143,20 +143,20 @@ const Beveromatic4LaneVending = () => {
                                 <TableRow
                                     icon={Settings}
                                     label="Gear Motor"
-                                    value={`4 motors, 100 RPM ± 5%`}
+                                    value={`4 motors`}
                                 />
                                 <TableRow
                                     icon={Gauge}
                                     label="Mixing Motor"
-                                    value={`4 motors, 15000 RPM ± 10%`}
+                                    value={`4 motors`}
                                     highlight
                                 />
                                 <TableRow icon={Scale} label="Dispensing Height" value={'110 mm'} />
-                                <TableRow icon={Coffee} label="Dispensing Rate" value={'5 Cups/min'} highlight />
-                                <TableRow icon={Monitor} label="Display" value={'LCD display module with yellow backlight (2 x 16 line Display)'} />
-                                <TableRow icon={Settings} label="Interface" value={'Keypad or button panel'} highlight />
+                                <TableRow icon={Coffee} label="Dispensing Rate" value={'Upto 6 Cups per Minute'} highlight />
+                                <TableRow icon={Monitor} label="Display" value={'LCD display module with yellow backlight'} />
+                                <TableRow icon={Settings} label="Interface" value={'Push Button Interface'} highlight />
                                 <TableRow icon={Coffee} label="Cup Count" value={'Available'} />
-                                <TableRow icon={Thermometer} label="Temperature Setting" value={'Available'} highlight />
+                                {/* <TableRow icon={Thermometer} label="Temperature Setting" value={'Available'} highlight /> */}
                                 <TableRow icon={Droplet} label="Rinse" value={'Hourly Rinse Available'} />
                             </tbody>
                         </table>
