@@ -1,12 +1,12 @@
 
-import { automaticvendingmachine } from '@/lib/metafile';
+import { automaticvendingmachinesecond } from '@/lib/metafile';
 
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-    title: automaticvendingmachine.title,
-    description: automaticvendingmachine.description,
+    title: automaticvendingmachinesecond.title,
+    description: automaticvendingmachinesecond.description,
 }
 function Page() {
     return (

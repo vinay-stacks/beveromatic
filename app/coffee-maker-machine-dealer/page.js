@@ -1,12 +1,12 @@
 
-import { coffeevendingmachine } from '@/lib/metafile';
+import { coffeevendingmachinesecond } from '@/lib/metafile';
 
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-    title: coffeevendingmachine.title,
-    description: coffeevendingmachine.description,
+    title: coffeevendingmachinesecond.title,
+    description: coffeevendingmachinesecond.description,
 }
 function Page() {
     return (

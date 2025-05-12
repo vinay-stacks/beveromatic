@@ -1,12 +1,12 @@
 
-import { teavendingmachine } from '@/lib/metafile';
+import { teavendingmachinesecond } from '@/lib/metafile';
 
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-    title: teavendingmachine.title,
-    description: teavendingmachine.description,
+    title: teavendingmachinesecond.title,
+    description: teavendingmachinesecond.description,
 }
 function Page() {
     return (
