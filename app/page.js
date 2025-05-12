@@ -169,7 +169,7 @@ export default function Home() {
 
   return (
     <>
-      
+
       <main className="mt-22 sm:mt-26 md:mt-28 lg:mt-36 xl:mt-36">
         <section className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10 max-[769px]:mt-36">
           <div style={{ width: "100%", margin: "0 auto" }}>
@@ -360,11 +360,11 @@ export default function Home() {
             </div>
           </div>
         </section>
-      {/* end of why choose section */}
+        {/* end of why choose section */}
 
-       {/* services section */}
-          <Services />
-      {/* end of services section */}
+        {/* services section */}
+        <Services />
+        {/* end of services section */}
 
         <section className="w-full py-20 bg-[#fff2eb] bg-[url('/bg/coffee-background-top-1.jpg')] bg-blend-multiply bg-center bg-cover">
           <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
