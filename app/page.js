@@ -363,7 +363,7 @@ export default function Home() {
         {/* end of why choose section */}
 
         {/* services section */}
-        <Services />
+        {/* <Services /> */}
         {/* end of services section */}
 
         <section className="w-full py-20 bg-[#fff2eb] bg-[url('/bg/coffee-background-top-1.jpg')] bg-blend-multiply bg-center bg-cover">
