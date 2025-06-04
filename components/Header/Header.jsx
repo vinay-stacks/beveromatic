@@ -77,7 +77,7 @@ function App() {
                     </div>
                     <div className='flex max-[567px]:hidden'>
                         <div className="flex items-center space-x-4">
-                            <Link target='_blank' href="https://www.facebook.com/beveromatic" className="text-[#f26522] hover:text-white transition-colors">
+                            <Link target='_blank' href="https://www.facebook.com/share/15sNsPYZ7T/?mibextid=wwXIfr" className="text-[#f26522] hover:text-white transition-colors">
                                 <Facebook size={18} />
                             </Link>
                             <span>|</span>

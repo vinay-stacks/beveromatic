@@ -37,7 +37,7 @@ const Footer = () => {
                             25 years of experience.
                         </p>
                         <div className="flex space-x-4 mt-6">
-                            <a target='_blank' href="https://www.facebook.com/beveromatic" className="text-gray-400 hover:text-white transition-colors">
+                            <a target='_blank' href="https://www.facebook.com/share/15sNsPYZ7T/?mibextid=wwXIfr" className="text-gray-400 hover:text-white transition-colors">
                                 <Facebook size={20} />
                             </a>
                             <a target='_blank' href="https://x.com/beveromatic" className="text-gray-400 hover:text-white transition-colors">
